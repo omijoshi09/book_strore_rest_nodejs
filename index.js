@@ -1,14 +1,14 @@
 import express from "express";
 import bodyParser from "body-parser";
 
-import usersRoutes from "./routes/users.js";
+import booksRoutes from "./routes/books.js";
 
 const app = express();
-const PORT = 5000;
+const PORT = 3000;
 
 app.use(bodyParser.json());
 
-app.use("/people", usersRoutes);
+app.use("/books", booksRoutes);
 app.get("/", (req, res) => res.send("Welcome to the Users API!"));
 app.all("*", (req, res) =>res.send("You've tried reaching a route that doesn't exist."));
 

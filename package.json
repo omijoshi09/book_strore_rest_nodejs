@@ -9,10 +9,13 @@
     "start": "nodemon index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Omkar Joshi",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
+    "express-validator": "^6.14.0",
+    "http-status": "^1.5.0",
+    "joi": "^17.6.0",
     "uuid": "^8.2.0"
   },
   "devDependencies": {
